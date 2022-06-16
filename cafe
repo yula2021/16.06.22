@@ -1,0 +1,115 @@
+package Cafe;
+
+public class Dish {
+    public String dishName;
+    public float dishPrice;
+
+    public Dish(String dishName, float dishPrice) {
+        this.dishName = dishName;
+        this.dishPrice = dishPrice;
+    }
+
+    public String getDishName() {
+        return dishName;
+    }
+
+    public void setDishName(String dishName) {
+        this.dishName = dishName;
+    }
+
+    public float getDishPrice() {
+        return dishPrice;
+    }
+
+    public void setDishPrice(float dishPrice) {
+        this.dishPrice = dishPrice;
+    }
+
+    @Override
+    public String toString() {
+        return "Dish{" +
+                "dishName='" + dishName + '\'' +
+                ", dishPrice=" + dishPrice +
+                '}';
+    }
+
+    class Sell {
+        public float cash;
+        public float change;
+        private boolean factOfSell;
+
+
+        public void Sell(float cash, String dishName) {
+            change = cash - dishPrice;
+            if (change > 0.01) factOfSell = true;
+            else System.out.println("There is not enough money");;
+            try {
+                change > 0.01f;
+
+                System.out.println("Bon appetit!");
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            };
+        }
+
+
+
+    }
+
+
+}
+
+
+
+//        public Dish() {
+//            this.dishes = new ArrayList<>();
+//            this.dishes.add("ice cream");
+//            this.dishes.add("cake");
+//            this.dishes.add("chocolate");
+//            this.dishes.add("hot dog");
+//            this.dishes.add("pizza");
+//            this.dishes.add("pancakes");
+
+package Cafe;
+
+public class Cafe {
+    String name = "Eat it and get out";
+    byte tableNumber = 15;
+
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setTableNumber(byte tableNumber) {
+        this.tableNumber = tableNumber;
+    }
+
+    @Override
+    public String toString() {
+        return "Cafe{" +
+                "name='" + name + '\'' +
+                '}';
+    }
+}
+
+package Cafe;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Cafe cafe = new Cafe();
+
+
+    }
+}
+
+
+package Cafe;
+
+public class Menu {
+
+}
